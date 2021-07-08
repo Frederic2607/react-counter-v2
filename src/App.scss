@@ -1,0 +1,127 @@
+/* Variables et Import */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+$purple: #5c48d3;
+$white: #ffffff;
+$font-1: "Montserrat", sans-serif;
+
+// ------------------------------------------------>
+
+/* HEADER */
+
+.App {
+  .header {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    border-bottom: solid 1px #e5e5e5;
+
+    .stopwatch {
+      color: $purple;
+      margin-left: 100px;
+    }
+
+    h1 {
+      margin-left: 40px;
+      font-family: $font-1;
+      font-size: 48px;
+    }
+  }
+}
+// ------------------------------------------------>
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .counter-disposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+main div button {
+  margin-bottom: 120px;
+  margin-top: 100px;
+  width: 200px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: $font-1;
+  background-color: $purple;
+  color: $white;
+  border-radius: 10px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// ------------------------------------------------>
+
+/* COUNTER */
+
+.wrapper-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-1;
+
+  .counter {
+    display: flex;
+    align-items: center;
+
+    .minus,
+    .plus,
+    .reset {
+      cursor: pointer;
+    }
+    .plus {
+      margin-right: 50px;
+    }
+    .minus {
+      margin-left: 50px;
+    }
+
+    .count {
+      height: 150px;
+      width: 150px;
+      background-color: $purple;
+      color: $white;
+      font-family: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 96px;
+      border-radius: 10px;
+      margin: 0px 20px 0px 20px;
+    }
+  }
+}
+.reset {
+  font-family: inherit;
+  background-color: $purple;
+  color: $white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
